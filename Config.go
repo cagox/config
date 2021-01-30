@@ -10,9 +10,6 @@ import (
  * ConfigurationStruct holds some generic configuration information but is
  * primarily there to hang the related methods off of.
  */
-
-var Config *ConfigurationStruct
-
 type ConfigurationStruct struct {
 	//Basic Site Configuration
 	Host              string
