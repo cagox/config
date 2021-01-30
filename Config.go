@@ -33,9 +33,6 @@ type ConfigurationStruct struct {
 	DatabaseServerURL    string
 }
 
-func init() {
-	Config = &ConfigurationStruct{}
-}
 
 //LoadConfigs loads a configuration file and stuffs it into the interface named config.
 func LoadConfigs(config interface{}, envVariable string) {
