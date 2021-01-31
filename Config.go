@@ -12,9 +12,9 @@ import (
  */
 type ConfigurationStruct struct {
 	//Basic Site Configuration
-	Host              string
-	StaticPath        string
-	TemplateRoot      string
+	Hosts        string
+	StaticPath   string
+	TemplateRoot string
 	//Basic Security Configuration
 	AdminToken        string
 	MinimumNameLength int
@@ -24,12 +24,11 @@ type ConfigurationStruct struct {
 	CookieName        string
 
 	//Database Configuration
-	DatabaseName         string
-	DatabaseUserName     string
-	DatabasePassword     string
-	DatabaseServerURL    string
+	DatabaseName      string
+	DatabaseUserName  string
+	DatabasePassword  string
+	DatabaseServerURL string
 }
-
 
 //LoadConfigs loads a configuration file and stuffs it into the interface named config.
 func LoadConfigs(config interface{}, envVariable string) {
@@ -50,7 +49,6 @@ func LoadConfigs(config interface{}, envVariable string) {
 
 }
 
-
 //getConfigPath() Gets the config path from the environmental variable.
 func getConfigPath(envVariable string) string {
 	//First we figure out where the configuration files should be.
@@ -61,4 +59,3 @@ func getConfigPath(envVariable string) string {
 	}
 	return configpath
 }
-
