@@ -28,6 +28,7 @@ type ConfigurationStruct struct {
 	DatabaseUserName  string
 	DatabasePassword  string
 	DatabaseServerURL string
+	DatabaseOptions   string
 }
 
 //LoadConfigs loads a configuration file and stuffs it into the interface named config.
